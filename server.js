@@ -1,6 +1,6 @@
 const express = require("express");
 const exphbs = require("express-handlebars");
-const mysql = require("mysql");
+// const mysql = require("mysql");
 
 const app = express();
 
@@ -15,22 +15,22 @@ app.use(express.json());
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
-const connection = mysql.createConnection({
-  host: "localhost",
-  port: 3306,
-  user: "root",
-  password: "",
-  database: "burgers_db"
-});
+// const connection = mysql.createConnection({
+//   host: "localhost",
+//   port: 3306,
+//   user: "root",
+//   password: "P@tchjenjase0318",
+//   database: "burgers_db"
+// });
 
-connection.connect(function(err) {
-  if (err) {
-    console.error("error connecting: " + err.stack);
-    return;
-  }
+// connection.connect(function(err) {
+//   if (err) {
+//     console.error("error connecting: " + err.stack);
+//     return;
+//   }
 
-  console.log("connected as id " + connection.threadId);
-});
+//   console.log("connected as id " + connection.threadId);
+// });
 
 // Use Handlebars to render the main index.html page with the plans in it.
 app.get("/", function(req, res) {
