@@ -1,0 +1,24 @@
+<h1>Eat-Da-Burger</h1>
+
+<h2>Choose a burger and devour it!</h2>
+
+<h3>Burgers ready to be devoured</h3>
+<ul>
+    {{#each burgers}}
+        {{#unless devoured}}
+            {{> burgers/burger-block devoured=true}}
+        {{/unless}}
+    {{/each}}
+</ul>
+
+<h3>Devoured!</h3>
+<ul>
+    {{#each burgers}}
+        {{#if devoured}} 
+            {{> burgers/burger-block devoured=false}}
+        {{/if}}
+    {{/each}}
+</ul>
+
+<h3>Add a burger</h3>
+<form action=""></form>
