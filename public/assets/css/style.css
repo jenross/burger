@@ -14,27 +14,14 @@ body {
 .burger-list {
     font-size: 22px; 
     border: 1px groove black; 
+    padding: 20px; 
 }
-
-/* button  */
-/* .devour {
-
-} */
-
-/* .create-burger-form {
-
-} */
-
-/* submit-button */
-/* .create-burger {
-
-} */
 
 label {
     font-size: 32px; 
 }
 
-/* input */
-/* .form-control {
-
-} */
+.devoured-burgers {
+    color: grey; 
+    text-decoration-line: line-through;  
+}

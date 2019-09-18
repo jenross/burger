@@ -18,7 +18,7 @@
         {{/each}}
     </ul>
 
-    <ul class="burger-list">
+    <ul class="burger-list devoured-burgers">
         {{#each burger}}
             {{#if devoured}} 
                 {{> burgers/burger-block devoured=false}}
@@ -27,10 +27,10 @@
     </ul>
 </div>
 
-<form class="d-flex create-burger-form col-sm-8 mt-3 justify-content-center">
-  <div class="form-group text-center">
+<form class="d-flex create-burger-form col-sm-10 mt-5">
+  <div class="form-group justify-content-center">
     <label for="burgersubmit">Add a burger</label>
     <input type="text" name="name" class="form-control" id="addburger">
   </div>
-  <button type="submit" class="btn btn-success create-burger text-center">Submit</button>
+  <button type="submit" class="btn btn-success create-burger">Submit</button>
 </form>

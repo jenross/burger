@@ -16,6 +16,9 @@ $(function() {
             location.reload();
         }
     );
+    if(newDevouredState === false) {
+        $(".devour").hide();
+    }
 });
 
     $(".create-burger-form").on("submit", function(event) {
