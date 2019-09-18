@@ -17,6 +17,10 @@ body {
     padding: 20px; 
 }
 
+.burger-list-container {
+    padding: 20px; 
+}
+
 label {
     font-size: 32px; 
 }
