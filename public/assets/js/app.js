@@ -1,5 +1,5 @@
 $(function() {
-    $(".devour").on("click", function(e) {
+    $(".devour").on("click", function(event) {
         let id =$(this).data("id");
         let devourNow = $(this).data("devournow");
 
@@ -22,7 +22,7 @@ $(function() {
 
         let newBurger = {
             burger_name: $("#addburger").val().trim(), 
-            devoured: true
+            devoured: false
         };
 
         $.ajax("/api/burgers", {
