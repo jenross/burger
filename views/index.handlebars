@@ -1,5 +1,7 @@
 <h1 class="text-center">Eat-Da-Burger</h1>
 
+<img src="../public/assets/img/" alt="burger">
+
 <h2>Choose a burger and devour it!</h2>
 
 <h3>Burgers ready to be devoured</h3>
@@ -20,10 +22,10 @@
     {{/each}}
 </ul>
 
-<form action="POST">
+<form action="POST" class="create-burger-form">
   <div class="form-group">
     <label for="burgersubmit">Add a burger</label>
     <input type="text" name="name" class="form-control" id="addburger"></input>
   </div>
-  <button type="submit" class="btn btn-primary mb-2">Submit</button>
+  <button type="submit" class="btn btn-primary mb-2 create-burger">Submit</button>
 </form>
