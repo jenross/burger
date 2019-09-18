@@ -4,36 +4,33 @@
 
 <h2 class="text-center mt-3">Choose a burger and devour it!</h2>
 
-<div class="d-flex mt-3">
-    <div class="burger-list-headers mt-3 d-flex justify-content-between">
-        <h3>Yum!</h3>
-        <h3>Gone!</h3>
-    </div>
-
-    <div class="mt-2 d-flex justify-content-between">
-        <ul class="burger-list">
-            {{#each burger}}
-                {{#unless devoured}}
-                    {{> burgers/burger-block devoured=true}}
-                {{/unless}}
-            {{/each}}
-        </ul>
-
-        <ul class="burger-list">
-            {{#each burger}}
-                {{#if devoured}} 
-                    {{> burgers/burger-block devoured=false}}
-                {{/if}}
-            {{/each}}
-        </ul>
-    </div>
-
+<div class="burger-list-headers mt-3 d-flex justify-content-between">
+    <h3>Yum!</h3>
+    <h3>Gone!</h3>
 </div>
 
-<form class="create-burger-form mt-3">
-  <div class="form-group col-sm-10 text-center">
+<div class="mt-2 d-flex justify-content-between">
+    <ul class="burger-list">
+        {{#each burger}}
+            {{#unless devoured}}
+                {{> burgers/burger-block devoured=true}}
+            {{/unless}}
+        {{/each}}
+    </ul>
+
+    <ul class="burger-list">
+        {{#each burger}}
+            {{#if devoured}} 
+                {{> burgers/burger-block devoured=false}}
+            {{/if}}
+        {{/each}}
+    </ul>
+</div>
+
+<form class="create-burger-form col-sm-8 mt-3">
+  <div class="form-group text-center">
     <label for="burgersubmit">Add a burger</label>
-    <input type="text" name="name" class="form-control mx-sm-3" id="addburger">
+    <input type="text" name="name" class="form-control" id="addburger">
   </div>
-  <button type="submit" class="btn btn-success mx-auto create-burger">Submit</button>
+  <button type="submit" class="btn btn-success create-burger text-center">Submit</button>
 </form>
