@@ -2,15 +2,13 @@
     box-sizing: border-box; 
 }
 
-body {
-    background-color: #7678ED; 
+body { 
     font-family: 'Fredoka One', cursive;
 }
 
 .burger-img {
     width: 200px; 
     height: 200px;
-    background-color: #7678ED;
 }
 
 .burger-list {
