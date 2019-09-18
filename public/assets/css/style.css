@@ -13,12 +13,12 @@ body {
 
 .burger-list {
     font-size: 22px; 
-    border: 1px groove black; 
     padding: 20px; 
 }
 
 .burger-list-container {
     padding: 20px; 
+    border: 1px groove black; 
 }
 
 label {

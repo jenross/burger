@@ -14,7 +14,7 @@ $(function() {
         function() {
             console.log("changed devoured to", newDevouredState);
             location.reload();
-            if(newDevouredState === false) {
+            if(devourNow == false) {
                 $(".devour").hide();
             }
         }
