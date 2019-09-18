@@ -1,5 +1,5 @@
 $(function() {
-    $(".devoured").on("click", function(e) {
+    $(".devour").on("click", function(e) {
         let id =$(this).data("id");
         let devourNow = $(this).data("devournow");
 

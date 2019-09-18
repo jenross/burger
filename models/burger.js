@@ -1,6 +1,6 @@
 const orm = require("../config/orm");
 
-const burger = {
+var burger = {
     selectAll: function(cb) {
         orm.selectAll("burgers", function(res) {
             cb(res);
