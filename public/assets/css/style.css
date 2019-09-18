@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box; 
+}
+
+body {
+    background-color: blue; 
+    font-family: 'Fredoka One', cursive;
+}
+
+/* button  */
+.devour {
+
+}
+
+.create-burger-form {
+
+}
+
+/* submit-button */
+.create-burger {
+
+}
+
+label {
+
+}
+
+/* input */
+.form-control {
+
+}

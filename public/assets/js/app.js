@@ -33,7 +33,6 @@ $(function() {
             function() {
                 console.log("created", newBurger);
                 location.reload();
-                // $("#addburger").empty();
             }
         );
     });
