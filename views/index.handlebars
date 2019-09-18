@@ -2,12 +2,12 @@
 
 <img src="assets/img/burger-img2.jpg" alt="burger" class="burger-img img-fluid mx-auto d-block">
 
-<h2 class"text-center mt-3"=>Choose a burger and devour it!</h2>
+<h2 class="text-center mt-3">Choose a burger and devour it!</h2>
 
-<div class="d-flex justify-content-between">
+<div class="d-flex justify-content-between mt-3">
 
-    <h3 class="mt-3">Burgers ready to be devoured</h3>
-    <ul class="mt-2">
+    <h3 class="mt-3">Yum!</h3>
+    <ul class="burger-list mt-2">
         {{#each burger}}
             {{#unless devoured}}
                 {{> burgers/burger-block devoured=true}}
@@ -15,8 +15,8 @@
         {{/each}}
     </ul>
 
-    <h3 class="mt-3">Devoured!</h3>
-    <ul class="mt-2">
+    <h3 class="mt-3">Gone!</h3>
+    <ul class="burger-list mt-2">
         {{#each burger}}
             {{#if devoured}} 
                 {{> burgers/burger-block devoured=false}}
@@ -27,9 +27,9 @@
 </div>
 
 <form class="create-burger-form mt-3">
-  <div class="form-group mx-sm-3 mb-2">
+  <div class="form-group">
     <label class="text-center" for="burgersubmit">Add a burger</label>
-    <input type="text" name="name" class="form-control" id="addburger">
+    <input type="text" name="name" class="form-control mx-sm-3" id="addburger">
   </div>
-  <button type="submit" class="btn btn-primary mb-2 create-burger">Submit</button>
+  <button type="submit" class="btn btn-success ml-2 create-burger">Submit</button>
 </form>
