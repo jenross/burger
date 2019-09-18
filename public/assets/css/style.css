@@ -3,29 +3,34 @@
 }
 
 body {
-    background-color: blue; 
+    background-color: #7678ED; 
     font-family: 'Fredoka One', cursive;
 }
 
+.burger-img {
+    width: 200px; 
+    height: 200px;
+}
+
 /* button  */
-.devour {
+/* .devour {
 
-}
+} */
 
-.create-burger-form {
+/* .create-burger-form {
 
-}
+} */
 
 /* submit-button */
-.create-burger {
+/* .create-burger {
 
-}
+} */
 
 label {
-
+    font-size: 35px; 
 }
 
 /* input */
-.form-control {
+/* .form-control {
 
-}
+} */
