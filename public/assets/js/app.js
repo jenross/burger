@@ -15,14 +15,13 @@ $(function() {
             location.reload();
         }
     );
-    $("#addburger").empty();
 });
 
     $(".create-burger").on("submit", function(event) {
         event.preventDefault(); 
 
         let newBurger = {
-            name: $("#addburger").val().trim(), 
+            burger_name: $("#addburger").val().trim(), 
             devoured: 0
         };
 
@@ -32,6 +31,7 @@ $(function() {
         }).then(
             function() {
                 location.reload();
+                $("#addburger").empty();
             }
         );
     });
