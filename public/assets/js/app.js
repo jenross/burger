@@ -12,6 +12,7 @@ $(function() {
         data: newDevouredState
     }).then (
         function() {
+            console.log("changed devoured to", newDevouredState);
             location.reload();
         }
     );
@@ -30,8 +31,9 @@ $(function() {
             data: newBurger
         }).then(
             function() {
+                console.log("created", newBurger);
                 location.reload();
-                $("#addburger").empty();
+                // $("#addburger").empty();
             }
         );
     });
