@@ -12,9 +12,7 @@ body {
 }
 
 .burger-list {
-    font-size: 22px; 
-    padding: 20px; 
-    margin: 10px; 
+    font-size: 22px;  
     border: 1px groove black;
 }
 
