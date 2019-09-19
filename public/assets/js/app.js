@@ -1,16 +1,4 @@
-function hideDevoured() {
-    let devouredBurgers = $(".devoured-burgers"); 
-    let readyToEat = $(".ready-to-eat");
-
-    if(devouredBurgers) {
-        $(".devour").hide();
-    } else if(readyToEat) {
-        $(".devour").show();
-    }
-}
-
 $(function() {
-    hideDevoured();
     $(".devour").on("click", function(event) {
         let id =$(this).data("id");
         let devourNow = $(this).data("devournow");
