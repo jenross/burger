@@ -1,4 +1,12 @@
+function hideDevoured() {
+    let devouredBurgers = $(".devoured-burgers"); 
+    if(devouredBurgers) {
+        $(".devour").hide();
+    }
+}
+
 $(function() {
+    hideDevoured();
     $(".devour").on("click", function(event) {
         let id =$(this).data("id");
         let devourNow = $(this).data("devournow");
@@ -14,7 +22,6 @@ $(function() {
         function() {
             console.log("changed devoured to", newDevouredState);
             location.reload();
-            $(".devour").hide();
         }
     );
 });
