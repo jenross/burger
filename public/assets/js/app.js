@@ -1,7 +1,11 @@
 function hideDevoured() {
     let devouredBurgers = $(".devoured-burgers"); 
+    let readyToEat = $(".ready-to-eat");
+
     if(devouredBurgers) {
         $(".devour").hide();
+    } else if(readyToEat) {
+        $(".devour").show();
     }
 }
 
